@@ -1,0 +1,42 @@
+#html,#css,#js{
+    min-height: 250px;
+    overflow: auto;
+    color:white;
+    display: inline-block;
+    background: black;
+    outline: none;
+    font-family: Courier, sans-serif;
+    font-size: 14px;
+    margin: auto;
+    width: 100%;
+    border:none;
+}
+#output{
+    width:100%;
+    border:none;
+    height: 35em;
+    overflow: auto;
+}
+.row{
+    padding-left: 10px;
+}
+h1{
+    text-align: center;
+    color:skyblue;
+    padding: 10px;
+}
+figcaption{
+    background: #0c0c0c;
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    font-weight: bold;
+    color: #c5c8d4;
+    font-size: 1.3em;
+    padding: 5px;
+    vertical-align: middle;
+}
+#header{
+    background:#191919;
+}
+#code{
+    background: #36383f;
+}
