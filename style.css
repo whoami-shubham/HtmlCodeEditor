@@ -40,3 +40,6 @@ figcaption{
 #code{
     background: #36383f;
 }
+body{
+ overflow-x: hidden;   
+}
