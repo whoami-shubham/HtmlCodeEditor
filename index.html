@@ -1,51 +1,51 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>code editor</title>
-        <link rel="stylesheet" href="bootstrap.min.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div id="header">
-            <h1>Code Editor</h1>
-            <div id="code" class="row">
-                
-                <!-- HTML section begin -->
-                
-                <div class="col-sm 4">
-                        <figcaption>HTML</figcaption>
-                        <textarea id="html" spellcheck="false"></textarea>
-                </div>
-                
-                <!-- HTML section end -->
-                <!-- CSS section begin -->
-                
-                <div class="col-sm 4">
-                    <figcaption>css</figcaption>
-                        <textarea id="css" spellcheck="false"></textarea>
-                </div>
-                
-                <!-- CSS section end -->
-                <!-- JS section begin -->
-                
-                <div class="col-sm 4">
-                        <figcaption>JS</figcaption>
-                        <textarea id="js" spellcheck="false"></textarea>
-                </div>
-                
-                <!-- JS section end -->
-                
-            </div>
-            <h1>Output</h1>
+<html lang="en">
+  <head>
+    <title>Frontend Editor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="light">
+    <div class="container">
+      <div class="editorWrapper col">
+        <!-- Editor Menu -->
+        <div class="editor-menu">
+          <div class="row menu">
+            <button id="theme">
+              <i class="fas fa-moon"></i>
+            </button>
+            <button id="run" class="m-x-5">
+              <i class="fas fa-play"></i>
+              run
+            </button>
+            <button id="download-code">
+              <i class="fas fa-file-code"> download</i>
+            </button>
+          </div>
         </div>
-        
-        <!-- OUTPUT section starts -->
-        
+        <!-- Editor Menu -->
+        <div class="flex-end">
+          <div class="editor-container">
+            <div id="editor"></div>
+          </div>
+          <div id="output-container">
+            <p class="output-heading">Output</p>
             <iframe id="output"></iframe>
-        
-        <!-- OUTPUT section end -->
-         
-     <script src="index.js"></script>
-        
-    </body>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.5/ace.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
 </html>

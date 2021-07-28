@@ -1,0 +1,119 @@
+:root {
+  --gray0: #f8f8f8;
+  --gray1: #dbe1e8;
+  --gray2: #b2becd;
+  --gray6: #12181b;
+  --black1: #282c34;
+  --black2: #dddddd;
+  --white: #ffffff;
+  --green: #04aa6d;
+}
+
+.light {
+  --bg: var(--gray0);
+  --bg-menu: var(--gray2);
+  --bg-button: var(--gray2);
+  --text: var(--gray6);
+}
+
+.dark {
+  --bg: var(--black1);
+  --bg-menu: var(--gray6);
+  --bg-button: var(--gray6);
+  --text: var(--white);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+}
+.m-x-5 {
+  margin: 0px 5px 0px 5px;
+}
+button {
+  border: 1px solid #ddd;
+  cursor: pointer;
+  color: var(--text);
+  background: var(--bg-button);
+}
+.editorWrapper {
+  background: var(--bg-menu);
+  width: 100%;
+  margin-top: 10%;
+}
+.editor-menu {
+  width: 100%;
+  height: 50px;
+}
+.menu {
+  padding: 0px 10px 0px 10px;
+}
+#editor {
+  width: 100%;
+  height: 90vh;
+  font-size: 18px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+#run {
+  width: 60px;
+  height: 50px;
+  background: var(--green);
+  color: var(--white);
+}
+#theme {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+}
+#download-code {
+  width: 100px;
+  height: 50px;
+}
+#output {
+  width: 100%;
+  height: 90vh;
+  margin: 0;
+  border: 1px solid #aaa;
+  padding: 0;
+  background: white;
+}
+#output-container {
+  width: 50%;
+  padding-left: 10px;
+}
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 10px 0px 10px;
+}
+.editor-container {
+  width: 50%;
+}
+.output-heading {
+  display: none;
+  text-align: center;
+}
+@media only screen and (max-width: 950px) {
+  .editor-container {
+    width: 100%;
+  }
+  #output-container {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .flex-end {
+    display: block;
+  }
+  .output-heading {
+    display: block;
+  }
+}
